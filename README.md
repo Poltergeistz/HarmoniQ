@@ -21,11 +21,10 @@ HarmoniQ is a time management tool that integrates AI-driven task scheduling wit
 
 The following technologies and platforms are relevant to this project:
 
-- [PydanticIA](https://github.com/pydantic/pydantic) for AI-based task management
-- [n8n](https://n8n.io/) for workflow automation
+- [PydanticIA](https://github.com/pydantic/pydantic) for AI-based tool management
+- [n8n](https://n8n.io/) for workflow automation (As prototype)
 - [Google Calendar API](https://developers.google.com/calendar) for syncing tasks and appointments
-- [MongoDB](https://www.mongodb.com/) for secure data storage
-- [React.js](https://reactjs.org/) for building the user interface
+- [Supabase](https://supabase.com/) for authentication and database management
 - [Node.js](https://nodejs.org/) for backend API and task automation
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
