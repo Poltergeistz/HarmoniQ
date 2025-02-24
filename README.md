@@ -119,8 +119,7 @@ Distributed under the Fair Source License. See `LICENSE` for more information.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### 📧 Contact
-
-Your Name - [https://github.com/poltergeistz](https://github.com/poltergeistz)
+David J. - [https://github.com/poltergeistz](https://github.com/poltergeistz)
 
 Project Link: [https://github.com/poltergeistz/harmoniq](https://github.com/poltergeistz/harmoniq)
 
