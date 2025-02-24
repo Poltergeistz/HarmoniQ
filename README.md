@@ -1,5 +1,8 @@
 <a name="readme-top"></a>
 
+![Social card](https://github.com/user-attachments/assets/bbc45c02-8a84-44f4-8404-12ec181ccce3)
+
+
 <div align="center">
   <h1 align="center">HarmoniQ - AI-Driven Time Management Tool with Menstrual Cycle Integration for Health Concious Entrepreneurs</h1>
   <p align="center">
