@@ -39,7 +39,7 @@ HarmoniQ is containerized with Docker for easy setup and execution. To run the p
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/harmoniq.git
+   git clone https://github.com/poltergeistz/harmoniq.git
    cd harmoniq
    ```
 
@@ -94,7 +94,7 @@ To test HarmoniQ:
 To start development on HarmoniQ:
 
 ```bash
-git clone https://github.com/your-username/harmoniq.git
+git clone https://github.com/poltergeistz/harmoniq.git
 cd harmoniq
 npm install
 ```
@@ -132,7 +132,7 @@ We welcome contributions from the community to help improve HarmoniQ! Whether yo
 1. **Fork the Repository**: Click on the "Fork" button at the top of this repository to create your own copy of HarmoniQ.
 2. **Clone the Repository**: Clone your forked repository to your local machine using:
    ```bash
-   git clone https://github.com/your-username/harmoniq.git
+   git clone https://github.com/poltergeistz/harmoniq.git
    ```
 3. **Create a Branch**: Make sure to create a new branch for each feature or bug fix you work on.
    ```bash
