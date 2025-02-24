@@ -156,10 +156,3 @@ We welcome contributions from the community to help improve HarmoniQ! Whether yo
 If you encounter any issues, please open an [issue](https://github.com/poltergeistz/harmoniq/issues) with a detailed description of the problem, steps to reproduce it, and any relevant logs or error messages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-```
-
-### Key changes:
-- **Run with Docker** section added: Instructions on how to use Docker to build and run the project.
-- Instructions to visit the app at `localhost:3000` or adjust the port as needed.
-
-Let me know if you'd like any further tweaks or additional details!
