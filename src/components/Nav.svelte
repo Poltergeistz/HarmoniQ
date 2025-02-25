@@ -64,12 +64,6 @@
           FAQ
         </a>
       </li>
-      <li role="none">
-        <a href="#footer" class="hover:underline focus:outline-none focus:ring-2 focus:ring-lime-400 px-2 py-1"
-          role="menuitem" aria-current={active === 'legal' ? 'page' : undefined}>
-          Legal
-        </a>
-      </li>
     </ul>
   </div>
 </nav>
