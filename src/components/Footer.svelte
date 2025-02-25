@@ -12,12 +12,12 @@
     <!-- Legal Links -->
     <ul class="flex justify-center space-x-6 mt-4" role="list">
       <li role="listitem">
-        <a href="#" class="hover:underline focus:outline-none focus:ring-2 focus:ring-lime-400 px-2 py-1" aria-label="Privacy Policy">
+        <a href="/privacy" class="hover:underline focus:outline-none focus:ring-2 focus:ring-lime-400 px-2 py-1" aria-label="Privacy Policy">
           Privacy Policy
         </a>
       </li>
       <li role="listitem">
-        <a href="#" class="hover:underline focus:outline-none focus:ring-2 focus:ring-lime-400 px-2 py-1" aria-label="Terms of Service">
+        <a href="/terms" class="hover:underline focus:outline-none focus:ring-2 focus:ring-lime-400 px-2 py-1" aria-label="Terms of Service">
           Terms of Service
         </a>
       </li>
