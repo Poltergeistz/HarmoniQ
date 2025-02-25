@@ -6,7 +6,6 @@
 <!-- Semantic <nav> element with ARIA landmark -->
 <nav 
   class="bg-indigo-200/70 backdrop-blur-md text-lime-200 py-4 fixed top-0 left-0 w-full z-50"
-  role="navigation"
   aria-label="Main Navigation"
 >
   <div class="max-w-6xl mx-auto px-4 flex justify-between items-center">

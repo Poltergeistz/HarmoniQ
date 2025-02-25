@@ -10,7 +10,6 @@
 	id="hero"
 	class="flex min-h-screen flex-col items-center justify-center bg-indigo-900 px-6 text-center text-lime-200"
 	aria-labelledby="hero-heading"
-	role="region"
 >
 	<div class="w-full max-w-6xl">
 		<!-- Accessible heading -->

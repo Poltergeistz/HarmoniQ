@@ -1,7 +1,6 @@
 <section 
   id="problem" 
   class="py-20 bg-lime-50 text-center"
-  role="region" 
   aria-labelledby="problem-heading"
 >
   <div class="max-w-6xl mx-auto px-4">
