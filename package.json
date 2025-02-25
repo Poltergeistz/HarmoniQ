@@ -35,5 +35,8 @@
 	"license": "Fair Source",
 	"author": "David Journo",
 	"description": "Landing page for HarmoniQ under Fair Source License, with commercial use restrictions.",
-	"licenseText": "Copyright (c) 2025 David Journo. This software is licensed under the Fair Source License. Commercial use, including the sale or sublicensing of this software, is prohibited without express permission from the original author, David Journo."
+	"licenseText": "Copyright (c) 2025 David Journo. This software is licensed under the Fair Source License. Commercial use, including the sale or sublicensing of this software, is prohibited without express permission from the original author, David Journo.",
+	"dependencies": {
+		"@notionhq/client": "^2.2.16"
+	}
 }
