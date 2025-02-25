@@ -23,9 +23,6 @@ export async function POST({
       throw new Error('Database ID is not provided');
     }
 
-    console.log("Notion Client Initialized", notion);
-    console.log("Database ID:", databaseId);
-
     const { email, source }: SubscribeRequestBody = await request.json();
 
     if (!email) {
@@ -43,9 +40,6 @@ export async function POST({
         }
       }
     });
-
-    // Log the response for debugging
-    console.log("Notion Response:", response);
 
     return json({ success: true, message: 'Subscription successful!' });
 
