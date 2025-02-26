@@ -1,7 +1,7 @@
 <section id="solution" class="bg-white py-20 text-center">
 	<div class="mx-auto max-w-6xl text-indigo-600">
 		<h2 class="mb-4 text-3xl font-bold">HarmoniQ: Productivity, Powered by Your Cycle</h2>
-		<p class="mb-8 mx-4 text-xl text-indigo-600">
+		<p class="mx-4 mb-8 text-xl text-indigo-600">
 			HarmoniQ is the first AI-driven platform that aligns your work schedule with your hormonal
 			phases. By understanding how your body and mind change throughout your menstrual cycle,
 			HarmoniQ tailors your tasks, giving you the focus and energy you need, exactly when you need
@@ -10,9 +10,9 @@
 		<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
 			<!-- Card 1: Personalized Task Management -->
 			<div
-				class="relative mx-auto w-full h-64 max-w-xs rounded-2xl bg-gradient-to-r from-indigo-600 via-emerald-400 to-lime-200 p-2 shadow-lg"
+				class="relative mx-auto h-64 w-full max-w-xs rounded-2xl bg-gradient-to-r from-indigo-600 via-emerald-400 to-lime-200 p-2 shadow-lg"
 			>
-				<div class="rounded-lg bg-white h-full p-6 shadow-xl hover:shadow-2xl">
+				<div class="h-full rounded-lg bg-white p-6 shadow-xl hover:shadow-2xl">
 					<h3 class="mb-4 text-2xl font-semibold">Personalized Task Management</h3>
 					<p>
 						Whether you’re in your high-energy follicular phase or need restful time during
@@ -23,9 +23,9 @@
 
 			<!-- Card 2: Seamless Calendar Integration -->
 			<div
-				class="relative mx-auto w-full h-64 max-w-xs rounded-2xl bg-gradient-to-r from-indigo-600 via-emerald-400 to-lime-200 p-2 shadow-lg"
+				class="relative mx-auto h-64 w-full max-w-xs rounded-2xl bg-gradient-to-r from-indigo-600 via-emerald-400 to-lime-200 p-2 shadow-lg"
 			>
-				<div class="rounded-lg bg-white h-full p-6 shadow-xl hover:shadow-2xl">
+				<div class="h-full rounded-lg bg-white p-6 shadow-xl hover:shadow-2xl">
 					<h3 class="mb-4 text-2xl font-semibold">Seamless Calendar Integration</h3>
 					<p>
 						Syncs directly with Google Calendar to streamline your schedule, ensuring you work
@@ -36,9 +36,9 @@
 
 			<!-- Card 3: Personalized Recommendations -->
 			<div
-				class="relative mx-auto w-full h-64 max-w-xs rounded-2xl bg-gradient-to-r from-indigo-600 via-emerald-400 to-lime-200 p-2 shadow-lg"
+				class="relative mx-auto h-64 w-full max-w-xs rounded-2xl bg-gradient-to-r from-indigo-600 via-emerald-400 to-lime-200 p-2 shadow-lg"
 			>
-				<div class="rounded-lg bg-white h-full p-6 shadow-xl hover:shadow-2xl">
+				<div class="h-full rounded-lg bg-white p-6 shadow-xl hover:shadow-2xl">
 					<h3 class="mb-4 text-2xl font-semibold">Personalized Recommendations</h3>
 					<p>
 						Receive task suggestions and productivity tips based on your hormonal cycle, ensuring

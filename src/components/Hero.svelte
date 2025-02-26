@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Form from '$lib/Form.svelte'; // Import the form component
+	import Form from '$lib/Form.svelte'; // Import the form component
 
-  let email = '';
-  let source = '';
-  let isSubscribed = false;
+	let email = '';
+	let source = '';
+	let isSubscribed = false;
 </script>
 
 <section
@@ -21,7 +21,7 @@
 		<!-- Descriptive supporting text -->
 		<p class="mb-6 text-lg sm:text-xl" id="hero-subheading">Empower Your Time, Honor Your Rhythm</p>
 
-    <!-- Use the Form component here -->
-    <Form bind:email={email} bind:source={source} bind:isSubscribed={isSubscribed} />
+		<!-- Use the Form component here -->
+		<Form bind:email bind:source bind:isSubscribed />
 	</div>
 </section>

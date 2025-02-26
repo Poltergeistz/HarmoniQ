@@ -16,6 +16,7 @@ Thank you for your interest in contributing to **HarmoniQ**! We welcome contribu
 
 3. **Make Your Changes**  
    Work on your changes, and remember to:
+
    - Write clear, concise commit messages.
    - Follow the code style and conventions used in the project.
    - Write tests for any new features or bug fixes, if applicable.
