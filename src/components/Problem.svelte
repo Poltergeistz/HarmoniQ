@@ -1,48 +1,79 @@
-<section id="problem" class="bg-lime-50 py-20 text-center" aria-labelledby="problem-heading">
-	<div class="mx-auto max-w-6xl px-4">
-		<h2 id="problem-heading" class="mb-4 text-3xl font-bold text-indigo-800">
-			Feeling Out of Sync with Your Workload?
+<script>
+	import { fade } from 'svelte/transition';
+	let revealed = false;
+	function reveal() {
+		if (!revealed) {
+			revealed = true;
+		}
+	}
+</script>
+<!-- Section "Feeling out of sync" -->
+<section id="problem" class="bg-primary px-4 py-16 text-white">
+	<div class="relative">
+		<!-- SVG Background -->
+		<svg
+			class="absolute top-0 left-0 -z-10 h-24 w-full md:h-32"
+			viewBox="0 0 500 150"
+			preserveAspectRatio="none"
+		>
+			<path d="M0,100 C150,200 350,0 500,100 L500,150 L0,150 Z" fill="rgb(229, 231, 235)">
+				<animateTransform
+					attributeName="transform"
+					type="translate"
+					values="0,0; -10,0; 0,0"
+					dur="3s"
+					repeatCount="indefinite"
+				/>
+			</path>
+		</svg>
+		<!-- Text Content -->
+		<h2 class="relative mb-8 text-center text-2xl md:text-3xl font-black">
+			FEELING OUT OF SYNC WITH YOUR WORKLOAD?
 		</h2>
-
-		<p class="mx-auto mb-6 max-w-3xl text-xl text-indigo-800">
-			As an entrepreneur, your ambitions are limitless. But when productivity seems to
-			fluctuate—when focus fades, energy dips, and creativity feels out of reach—it can be
-			frustrating.
-		</p>
-
-		<p class="mx-auto mb-6 max-w-3xl text-xl text-indigo-800">
-			If you’ve ever blamed yourself for feeling <b
-				>burnt out, unmotivated, or unable to concentrate</b
-			>, the truth is: <b>it's not you, it's biology.</b> Hormonal shifts impact mental clarity,
-			stamina, and even decision-making. Yet most productivity systems are built
-			<b>as if every day is the same.</b>
-		</p>
-
-		<p class="mx-auto max-w-3xl text-xl font-semibold text-indigo-800">
-			Why should your work schedule fight against your body’s natural rhythm? What if, instead, it
-			worked with you?
-		</p>
-
-		<!-- User Case Example -->
-		<div class="mx-auto mt-12 max-w-3xl rounded-lg bg-indigo-200 p-6 text-indigo-700 shadow-lg">
-			<h3 class="mb-4 text-2xl font-semibold">
-				A Woman’s Story: Thriving During Her Follicular Phase
-			</h3>
-			<p class="text-xl">
-				Meet Emma. As a startup founder, Emma was constantly juggling meetings, deadlines, and
-				creative tasks. She often felt overwhelmed, unsure why some days she felt energized and
-				others drained. After tracking her cycle, Emma discovered that she felt her best and was
-				most productive during the <strong>follicular phase</strong>—right after her period ends.
-				During this time, her energy levels were at their highest, and her creativity soared.
-			</p>
-			<p class="mt-4 text-xl">
-				Armed with this insight, Emma adjusted her schedule to align with her body's natural rhythm.
-				She started focusing on big projects and brainstorming new ideas during her follicular
-				phase, and scheduled meetings or admin work during times when she felt less energetic. The
-				result? Emma felt more in control of her energy, was more productive, and was no longer
-				frustrated by unpredictable dips in focus. She finally realized: her body had the answers
-				all along.
-			</p>
+	</div>
+	<p class="mx-auto my-8 max-w-2xl text-center italic">
+		❝ As a wonder woman, your ambitions are limitless. But when productivity seems to fluctuate —
+		when focus fades, energy dips, and creativity feels out of reach — it can be frustrating.❞
+	</p>
+	<h3 class="mb-10 text-center text-xl font-bold">THE HIDDEN CHALLENGE NO ONE TALKS ABOUT</h3>
+	<!-- Section "Click to reveal" -->
+	<div class="reveal-container mx-auto mb-16 max-w-2xl">
+		<div
+			class="relative cursor-pointer rounded-lg border-2 border-purple-300 overflow-hidden h-80 w-full"
+			class:cursor-default={revealed}
+			on:click={reveal}
+		>
+			<!-- Blurred background (without image) -->
+			<div class="absolute inset-0 bg-gradient-to-br from-violet-200/70 to-violet-600/70" class:backdrop-blur-lg={!revealed}>
+			</div>
+			
+			<!-- Content overlay -->
+			<div class="relative z-10 h-full w-full flex items-center justify-center p-6">
+				{#if !revealed}
+					<p class="text-xl font-black text-accent bg-violet-800/30 px-6 py-3 rounded-lg">
+						CLICK TO REVEAL
+					</p>
+				{:else}
+					<div transition:fade class="bg-violet-900/80 p-6 rounded-lg h-full w-full flex flex-col justify-center">
+						<p class="pb-4 text-lg">
+							If you've ever blamed yourself for feeling burnt out, unmotivated, or unable to
+							concentrate, here's the truth:
+						</p>
+						<ol class="space-y-2">
+							<li><b>🔸 It's not you—it's biology</b></li>
+							<li><b>🔸 Hormonal shifts impact mental clarity, stamina, and decision-making</b></li>
+							<li><b>🔸 Yet, most productivity systems assume every day is the same</b></li>
+						</ol>
+						<p class="pt-4">
+							The result? You're constantly pushing against your natural rhythm, making work feel
+							harder than it should.
+						</p>
+					</div>
+				{/if}
+			</div>
 		</div>
 	</div>
+	<h3 class="mb-6 text-center text-xl font-black text-accent md:text-2xl">
+		WHAT IF YOUR WORK SCHEDULE WORKED WITH YOU — NOT AGAINST YOU?
+	</h3>
 </section>

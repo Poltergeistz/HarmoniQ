@@ -2,30 +2,30 @@
 	let activeIndex = null; // Track the currently active accordion item
 </script>
 
-<section id="faq" class="bg-white py-16 text-center">
+<section id="faq" class="bg-primary py-16 text-center">
 	<div class="mx-auto max-w-3xl px-4">
-		<h2 class="mb-8 text-3xl font-bold text-indigo-700">Frequently Asked Questions</h2>
+		<h2 class="mb-12 text-3xl font-black text-white uppercase font-montserrat">Frequently Asked Questions</h2>
 
 		<div class="space-y-4">
 			<!-- Accordion Item 1 -->
 			<div>
 				<button
-					class="flex w-full items-center justify-between border-b bg-transparent p-4 text-indigo-700"
+					class="flex w-full items-center justify-between border-b border-violet-300 bg-transparent p-4 text-white uppercase"
 					aria-expanded={activeIndex === 0 ? 'true' : 'false'}
 					aria-controls="faq-1"
 					on:click={() => (activeIndex = activeIndex === 0 ? null : 0)}
 				>
-					<h3 class="text-lg font-semibold">What is HarmoniQ?</h3>
+					<h3 class="text-lg font-semibold font-montserrat">What is HarmoniQ?</h3>
 					<span
 						class="transform transition-transform duration-200"
-						style:transform={activeIndex === 0 ? 'rotate(90deg)' : 'rotate(0deg)'}
+						style:transform={activeIndex === 0 ? 'rotate(-90deg)' : 'rotate(0deg)'}
 					>
 						&#9660; <!-- Caret pointing down -->
 					</span>
 				</button>
 				{#if activeIndex === 0}
 					<div id="faq-1" class="p-4 text-left text-sm">
-						<p>
+						<p class="text-white font-lato">
 							HarmoniQ is a tool that syncs your productivity schedule with your menstrual cycle,
 							helping you optimize your tasks and work in harmony with your natural rhythm.
 						</p>
@@ -36,23 +36,23 @@
 			<!-- Accordion Item 2 -->
 			<div>
 				<button
-					class="flex w-full items-center justify-between border-b bg-transparent p-4 text-indigo-700"
+					class="flex w-full items-center justify-between border-b border-violet-300 bg-transparent p-4 text-white uppercase"
 					aria-expanded={activeIndex === 1 ? 'true' : 'false'}
 					aria-controls="faq-2"
 					on:click={() => (activeIndex = activeIndex === 1 ? null : 1)}
 				>
-					<h3 class="text-lg font-semibold">How do I join the waiting list?</h3>
+					<h3 class="text-lg font-semibold font-montserrat">How do I join the waiting list?</h3>
 					<span
 						class="transform transition-transform duration-200"
-						style:transform={activeIndex === 1 ? 'rotate(90deg)' : 'rotate(0deg)'}
+						style:transform={activeIndex === 1 ? 'rotate(-90deg)' : 'rotate(0deg)'}
 					>
 						&#9660; <!-- Caret pointing down -->
 					</span>
 				</button>
 				{#if activeIndex === 1}
 					<div id="faq-2" class="p-4 text-left text-sm">
-						<p>
-							Simply enter <a href="#hero" class="text-indigo-700 hover:underline">your email</a> in
+						<p class="text-white font-lato">
+							Simply enter <a href="#hero" class="text-lime-300 hover:underline">your email</a> in
 							the form at the top of the page to join the waiting list and get notified when HarmoniQ
 							launches!
 						</p>
@@ -63,22 +63,22 @@
 			<!-- Accordion Item 3 -->
 			<div>
 				<button
-					class="flex w-full items-center justify-between border-b bg-transparent p-4 text-indigo-700"
+					class="flex w-full items-center justify-between border-b border-violet-300 bg-transparent p-4 text-white uppercase"
 					aria-expanded={activeIndex === 2 ? 'true' : 'false'}
 					aria-controls="faq-3"
 					on:click={() => (activeIndex = activeIndex === 2 ? null : 2)}
 				>
-					<h3 class="text-lg font-semibold">When will HarmoniQ be available?</h3>
+					<h3 class="text-lg font-semibold font-montserrat">When will HarmoniQ be available?</h3>
 					<span
 						class="transform transition-transform duration-200"
-						style:transform={activeIndex === 2 ? 'rotate(90deg)' : 'rotate(0deg)'}
+						style:transform={activeIndex === 2 ? 'rotate(-90deg)' : 'rotate(0deg)'}
 					>
 						&#9660; <!-- Caret pointing down -->
 					</span>
 				</button>
 				{#if activeIndex === 2}
 					<div id="faq-3" class="p-4 text-left text-sm">
-						<p>
+						<p class="text-white font-lato">
 							HarmoniQ is launching soon! Make sure to join the waiting list to stay updated on the
 							release date and get early access.
 						</p>

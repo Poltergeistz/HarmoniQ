@@ -1,99 +1,54 @@
-<section id="solution" class="bg-white py-20 text-center">
-	<div class="mx-auto max-w-6xl text-indigo-600">
-		<h2 class="mb-4 text-3xl font-bold">HarmoniQ: Productivity, Powered by Your Cycle</h2>
-		<p class="mx-4 mb-8 text-xl text-indigo-600">
-			HarmoniQ is the first AI-driven platform that aligns your work schedule with your hormonal
-			phases. By understanding how your body and mind change throughout your menstrual cycle,
-			HarmoniQ tailors your tasks, giving you the focus and energy you need, exactly when you need
-			it.
-		</p>
-		<div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
-			<!-- Card 1: Personalized Task Management -->
-			<div
-				class="relative mx-auto h-64 w-full max-w-xs rounded-2xl bg-gradient-to-r from-indigo-600 via-emerald-400 to-lime-200 p-2 shadow-lg"
-			>
-				<div class="h-full rounded-lg bg-white p-6 shadow-xl hover:shadow-2xl">
-					<h3 class="mb-4 text-2xl font-semibold">Personalized Task Management</h3>
-					<p>
-						Whether you’re in your high-energy follicular phase or need restful time during
-						menstruation, HarmoniQ adjusts your to-do list to suit your body’s natural rhythms.
-					</p>
-				</div>
-			</div>
+<script>
+	import { BicepsFlexed, Sparkles, CalendarHeart } from '@lucide/svelte';
+</script>
 
-			<!-- Card 2: Seamless Calendar Integration -->
-			<div
-				class="relative mx-auto h-64 w-full max-w-xs rounded-2xl bg-gradient-to-r from-indigo-600 via-emerald-400 to-lime-200 p-2 shadow-lg"
-			>
-				<div class="h-full rounded-lg bg-white p-6 shadow-xl hover:shadow-2xl">
-					<h3 class="mb-4 text-2xl font-semibold">Seamless Calendar Integration</h3>
-					<p>
-						Syncs directly with Google Calendar to streamline your schedule, ensuring you work
-						smarter, not harder.
-					</p>
-				</div>
+<!-- Section "Empowering your time" -->
+<section id="solution" class="bg-primary px-2 py-10 text-white">
+	<h2 class="font-montserrat my-8 text-center text-2xl font-black md:text-3xl">
+		EMPOWERING <span class="text-accent">YOUR TIME</span>, HONORING
+		<span class="text-accent">YOUR RHYTHM</span>
+	</h2>
+	<!-- Features grid -->
+	<div class="mx-auto grid max-w-4xl grid-cols-1 gap-6 md:grid-cols-2">
+		<!-- Feature 1 -->
+		<div class="rounded-lg bg-secondary p-6">
+			<div class="mb-4 flex justify-center">
+				<span class="text-accent"><Sparkles /></span>
 			</div>
-
-			<!-- Card 3: Personalized Recommendations -->
-			<div
-				class="relative mx-auto h-64 w-full max-w-xs rounded-2xl bg-gradient-to-r from-indigo-600 via-emerald-400 to-lime-200 p-2 shadow-lg"
-			>
-				<div class="h-full rounded-lg bg-white p-6 shadow-xl hover:shadow-2xl">
-					<h3 class="mb-4 text-2xl font-semibold">Personalized Recommendations</h3>
-					<p>
-						Receive task suggestions and productivity tips based on your hormonal cycle, ensuring
-						you stay at your best.
-					</p>
-				</div>
-			</div>
+			<h3 class="mb-2 text-center text-lg font-bold">PERSONALIZED RECOMMENDATIONS</h3>
+			<p class="text-center text-sm">
+				Receive task suggestions and productivity tips based on your hormonal cycle, ensuring you
+				shine on any given day.
+			</p>
 		</div>
-	</div>
-
-	<!-- HarmoniQ vs Other Productivity Tools -->
-	<div class="mt-8">
-		<h2 class="mb-8 text-lg font-bold text-indigo-600">How Does HarmoniQ Compare?</h2>
-		<div class="mt-4 overflow-x-auto">
-			<table class="w-full border-collapse rounded-lg border border-lime-300 text-left shadow-lg">
-				<thead class="bg-lime-200 text-indigo-700">
-					<tr>
-						<th class="border border-lime-300 px-4 py-2">Feature</th>
-						<th class="border border-lime-300 px-4 py-2">HarmoniQ</th>
-						<th class="border border-lime-300 px-4 py-2">Other Productivity Tools</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr class="transition duration-300 hover:bg-lime-50">
-						<td class="border border-lime-300 px-4 py-2">AI-Powered Task Scheduling</td>
-						<td class="border border-lime-300 px-4 py-2">✅ Yes</td>
-						<td class="border border-lime-300 px-4 py-2">❌ No</td>
-					</tr>
-					<tr class="bg-indigo-100 transition duration-300 hover:bg-indigo-200">
-						<td class="border border-lime-300 px-4 py-2">Sync with Menstrual Cycle</td>
-						<td class="border border-lime-300 px-4 py-2">✅ Yes</td>
-						<td class="border border-lime-300 px-4 py-2">❌ No</td>
-					</tr>
-					<tr class="transition duration-300 hover:bg-lime-50">
-						<td class="border border-lime-300 px-4 py-2">Google Calendar Integration</td>
-						<td class="border border-lime-300 px-4 py-2">✅ Yes</td>
-						<td class="border border-lime-300 px-4 py-2">🔄 Sometimes</td>
-					</tr>
-					<tr class="bg-indigo-100 transition duration-300 hover:bg-indigo-200">
-						<td class="border border-lime-300 px-4 py-2">Personalized Recommendations</td>
-						<td class="border border-lime-300 px-4 py-2">✅ Yes</td>
-						<td class="border border-lime-300 px-4 py-2">❌ No</td>
-					</tr>
-					<tr class="transition duration-300 hover:bg-lime-50">
-						<td class="border border-lime-300 px-4 py-2">Track Hormonal Phases</td>
-						<td class="border border-lime-300 px-4 py-2">✅ Yes</td>
-						<td class="border border-lime-300 px-4 py-2">❌ No</td>
-					</tr>
-					<tr class="bg-indigo-100 transition duration-300 hover:bg-indigo-200">
-						<td class="border border-lime-300 px-4 py-2">Real-Time Adjustments</td>
-						<td class="border border-lime-300 px-4 py-2">✅ Yes</td>
-						<td class="border border-lime-300 px-4 py-2">🔄 Limited</td>
-					</tr>
-				</tbody>
-			</table>
+		<!-- Feature 2 -->
+		<div class="rounded-lg bg-secondary p-6">
+			<div class="mb-4 flex justify-center">
+				<span class="text-accent"><CalendarHeart /></span>
+			</div>
+			<h3 class="mb-2 text-center text-lg font-bold">SEAMLESS CALENDAR INTEGRATION</h3>
+			<p class="text-center text-sm">
+				Sync directly with your existing calendar, organizing your schedule, assigning you work with
+				your natural rhythm in mind.
+			</p>
+		</div>
+		<!-- Feature 3 - Full width on md screens -->
+		<div
+			class="flex flex-col items-center gap-6 rounded-lg bg-secondary p-6 md:col-span-2 md:flex-row"
+		>
+			<div class="flex flex-1 flex-col">
+				<div class="mb-4 flex justify-center">
+					<span class="text-accent"><BicepsFlexed /></span>
+				</div>
+				<h3 class="mb-2 text-center text-lg font-bold">USE YOUR BODY TO THRIVE</h3>
+				<p class="text-center text-sm">
+					Every woman has ups and downs. It's okay! HarmoniQ understands that and aligns with your
+					cycle to maximize your goals.
+				</p>
+			</div>
+			<div class="flex flex-1 justify-center rounded-xl bg-violet-100">
+				<img src="smartphone-exemple.svg" alt="smartphone" class="max-h-64" />
+			</div>
 		</div>
 	</div>
 </section>

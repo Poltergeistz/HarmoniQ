@@ -1,1 +1,18 @@
 @import 'tailwindcss';
+
+@theme {
+	--color-primary: #725ACA;
+	--color-secondary: #A289FC;
+	--color-accent: #D9FFA6;
+  }
+
+@keyframes wave {
+	0% { transform: translateX(0); }
+	50% { transform: translateX(-20px); }
+	100% { transform: translateX(0); }
+}
+
+.animate-wave {
+	animation: wave 3s ease-in-out infinite;
+}
+
