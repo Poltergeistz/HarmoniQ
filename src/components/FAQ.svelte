@@ -18,7 +18,7 @@
 					<h3 class="text-lg font-semibold font-montserrat">What is HarmoniQ?</h3>
 					<span
 						class="transform transition-transform duration-200"
-						style:transform={activeIndex === 0 ? 'rotate(-90deg)' : 'rotate(0deg)'}
+						style:transform={activeIndex === 0 ? 'rotate(0deg)' : 'rotate(-90deg)'}
 					>
 						&#9660; <!-- Caret pointing down -->
 					</span>
@@ -44,7 +44,7 @@
 					<h3 class="text-lg font-semibold font-montserrat">How do I join the waiting list?</h3>
 					<span
 						class="transform transition-transform duration-200"
-						style:transform={activeIndex === 1 ? 'rotate(-90deg)' : 'rotate(0deg)'}
+						style:transform={activeIndex === 1 ? 'rotate(0deg)' : 'rotate(-90deg)'}
 					>
 						&#9660; <!-- Caret pointing down -->
 					</span>
@@ -52,7 +52,7 @@
 				{#if activeIndex === 1}
 					<div id="faq-2" class="p-4 text-left text-sm">
 						<p class="text-white font-lato">
-							Simply enter <a href="#hero" class="text-lime-300 hover:underline">your email</a> in
+							Simply enter <a href="#hero" class="text-accent font-bold hover:underline">your email</a> in
 							the form at the top of the page to join the waiting list and get notified when HarmoniQ
 							launches!
 						</p>
@@ -71,7 +71,7 @@
 					<h3 class="text-lg font-semibold font-montserrat">When will HarmoniQ be available?</h3>
 					<span
 						class="transform transition-transform duration-200"
-						style:transform={activeIndex === 2 ? 'rotate(-90deg)' : 'rotate(0deg)'}
+						style:transform={activeIndex === 2 ? 'rotate(0deg)' : 'rotate(-90deg)'}
 					>
 						&#9660; <!-- Caret pointing down -->
 					</span>
