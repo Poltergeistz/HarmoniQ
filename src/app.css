@@ -9,13 +9,23 @@
 	--font-lato: "Lato", sans-serif;
   }
 
-@keyframes wave {
-	0% { transform: translateX(0); }
-	50% { transform: translateX(-20px); }
-	100% { transform: translateX(0); }
-}
-
-.animate-wave {
-	animation: wave 3s ease-in-out infinite;
-}
+  path {
+	stroke-dasharray: 3000;  /* Total length of the path */
+	stroke-dashoffset: 3000; /* Start the path with a dashed line */
+	animation: sine-wave 5s ease-in-out infinite;
+  }
+  
+  @keyframes sine-wave {
+	0% {
+	  transform: translateX(0);
+	}
+	50% {
+	  transform: translateX(15px); /* Move right */
+	}
+	100% {
+	  transform: translateX(0); /* Move back to original position */
+	}
+  }
+  
+  
 
