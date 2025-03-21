@@ -34,7 +34,7 @@
 		>
 			<li role="none">
 				<a
-					href="#hero"
+					href="/#hero"
 					class="px-2 py-1 hover:underline focus:ring-2 focus:ring-lime-400 focus:outline-none font-bold"
 					role="menuitem"
 					aria-current={active === 'home' ? 'page' : undefined}
@@ -44,7 +44,7 @@
 			</li>
 			<li role="none">
 				<a
-					href="#problem"
+					href="/#problem"
 					class="px-2 py-1 hover:underline focus:ring-2 focus:ring-lime-400 focus:outline-none font-bold"
 					role="menuitem"
 					aria-current={active === 'problem' ? 'page' : undefined}
@@ -54,7 +54,7 @@
 			</li>
 			<li role="none">
 				<a
-					href="#solution"
+					href="/#solution"
 					class="px-2 py-1 hover:underline focus:ring-2 focus:ring-lime-400 focus:outline-none font-bold"
 					role="menuitem"
 					aria-current={active === 'solution' ? 'page' : undefined}
@@ -64,7 +64,7 @@
 			</li>
 			<li role="none">
 				<a
-					href="#demo"
+					href="/#demo"
 					class="px-2 py-1 hover:underline focus:ring-2 focus:ring-lime-400 focus:outline-none font-bold"
 					role="menuitem"
 					aria-current={active === 'demo' ? 'page' : undefined}
@@ -74,7 +74,7 @@
 			</li>
 			<li role="none">
 				<a
-					href="#faq"
+					href="/#faq"
 					class="px-2 py-1 hover:underline focus:ring-2 focus:ring-lime-400 focus:outline-none font-bold"
 					role="menuitem"
 					aria-current={active === 'faq' ? 'page' : undefined}
