@@ -2,9 +2,9 @@
 	let activeIndex = null; // Track the currently active accordion item
 </script>
 
-<section id="faq" class="bg-primary py-16 text-center">
+<section id="faq" class="bg-primary py-16">
 	<div class="mx-auto max-w-3xl px-4">
-		<h2 class="mb-12 text-3xl font-black text-white uppercase font-montserrat">Frequently Asked Questions</h2>
+		<h2 class="mb-12 text-3xl font-black text-white uppercase font-montserrat text-center">Frequently Asked Questions</h2>
 
 		<div class="space-y-4">
 			<!-- Accordion Item 1 -->
@@ -15,7 +15,7 @@
 					aria-controls="faq-1"
 					on:click={() => (activeIndex = activeIndex === 0 ? null : 0)}
 				>
-					<h3 class="text-lg font-semibold font-montserrat">What is HarmoniQ?</h3>
+					<h3 class="text-sm lg:text-lg md:text-lg font-semibold font-montserrat">What is HarmoniQ?</h3>
 					<span
 						class="transform transition-transform duration-200"
 						style:transform={activeIndex === 0 ? 'rotate(0deg)' : 'rotate(-90deg)'}
@@ -41,7 +41,7 @@
 					aria-controls="faq-2"
 					on:click={() => (activeIndex = activeIndex === 1 ? null : 1)}
 				>
-					<h3 class="text-lg font-semibold font-montserrat">How do I join the waiting list?</h3>
+					<h3 class="text-sm lg:text-lg md:text-lg font-semibold font-montserrat">How do I join the waiting list?</h3>
 					<span
 						class="transform transition-transform duration-200"
 						style:transform={activeIndex === 1 ? 'rotate(0deg)' : 'rotate(-90deg)'}
@@ -68,7 +68,7 @@
 					aria-controls="faq-3"
 					on:click={() => (activeIndex = activeIndex === 2 ? null : 2)}
 				>
-					<h3 class="text-lg font-semibold font-montserrat">When will HarmoniQ be available?</h3>
+					<h3 class="text-sm lg:text-lg md:text-lg font-semibold font-montserrat">When will HarmoniQ be available?</h3>
 					<span
 						class="transform transition-transform duration-200"
 						style:transform={activeIndex === 2 ? 'rotate(0deg)' : 'rotate(-90deg)'}
