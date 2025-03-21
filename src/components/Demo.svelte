@@ -1,4 +1,4 @@
-<section id="demo" class="bg-primary py-20 text-center">
+<section id="demo" class="bg-primary py-20 px-4 sm:px-4 md:px-4 text-center">
 	<div class="mx-auto max-w-6xl">
 		<h2 class="my-8 text-3xl font-black text-white black uppercase">Demo</h2>
 
