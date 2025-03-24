@@ -5,13 +5,16 @@
 
 <!-- Semantic <nav> element with ARIA landmark -->
 <nav
-	class="fixed top-0 left-0 z-50 w-full bg-primary/70 py-4 text-white backdrop-blur-md"
+	class="bg-primary/70 fixed top-0 left-0 z-50 w-full py-4 text-white backdrop-blur-md"
 	aria-label="Main Navigation"
 >
 	<div class="mx-auto flex max-w-6xl items-center justify-between px-4">
 		<!-- Logo as a clickable Home link -->
 		<a href="#hero" class="flex items-center space-x-2" aria-label="Go to homepage">
-			<span class="text-2xl font-black bg-clip-text text-transparent bg-gradient-to-r from-accent via-lime-100 to-white italic uppercase">HarmoniQ</span>
+			<span
+				class="font-montserrat from-accent bg-gradient-to-r via-lime-100 to-white bg-clip-text text-2xl font-black text-transparent uppercase italic"
+				>HarmoniQ</span
+			>
 		</a>
 
 		<!-- Mobile Hamburger Menu Button -->
@@ -35,7 +38,7 @@
 			<li role="none">
 				<a
 					href="/#hero"
-					class="px-2 py-1 hover:underline focus:ring-2 focus:ring-lime-400 focus:outline-none font-bold"
+					class="font-lato px-2 py-1 font-bold hover:underline focus:ring-2 focus:ring-lime-400 focus:outline-none"
 					role="menuitem"
 					aria-current={active === 'home' ? 'page' : undefined}
 				>
@@ -45,7 +48,7 @@
 			<li role="none">
 				<a
 					href="/#problem"
-					class="px-2 py-1 hover:underline focus:ring-2 focus:ring-lime-400 focus:outline-none font-bold"
+					class="font-lato px-2 py-1 font-bold hover:underline focus:ring-2 focus:ring-lime-400 focus:outline-none"
 					role="menuitem"
 					aria-current={active === 'problem' ? 'page' : undefined}
 				>
@@ -55,7 +58,7 @@
 			<li role="none">
 				<a
 					href="/#solution"
-					class="px-2 py-1 hover:underline focus:ring-2 focus:ring-lime-400 focus:outline-none font-bold"
+					class="font-lato px-2 py-1 font-bold hover:underline focus:ring-2 focus:ring-lime-400 focus:outline-none"
 					role="menuitem"
 					aria-current={active === 'solution' ? 'page' : undefined}
 				>
@@ -65,7 +68,7 @@
 			<li role="none">
 				<a
 					href="/#demo"
-					class="px-2 py-1 hover:underline focus:ring-2 focus:ring-lime-400 focus:outline-none font-bold"
+					class="font-lato px-2 py-1 font-bold hover:underline focus:ring-2 focus:ring-lime-400 focus:outline-none"
 					role="menuitem"
 					aria-current={active === 'demo' ? 'page' : undefined}
 				>
@@ -75,7 +78,7 @@
 			<li role="none">
 				<a
 					href="/#faq"
-					class="px-2 py-1 hover:underline focus:ring-2 focus:ring-lime-400 focus:outline-none font-bold"
+					class="font-lato px-2 py-1 font-bold hover:underline focus:ring-2 focus:ring-lime-400 focus:outline-none"
 					role="menuitem"
 					aria-current={active === 'faq' ? 'page' : undefined}
 				>

@@ -9,7 +9,7 @@
 </script>
 
 <!-- Section "Feeling out of sync" -->
-<section id="problem" class="bg-primary px-4 py-16 text-white">
+<section id="problem" class="bg-primary px-4 py-10 text-white">
 	<div class="relative">
 		<svg
 			width="1118"
@@ -17,7 +17,7 @@
 			viewBox="0 0 1118 75"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
-			class="absolute bottom-1 z-0 hidden h-auto w-auto max-w-full object-contain md:left-0 md:block lg:left-25"
+			class="absolute bottom-1 z-0 hidden h-auto w-auto max-w-full object-contain md:left-0 md:block lg:left-25 xl:left-100"
 			alt="Workflow Wave"
 		>
 			<path
@@ -30,17 +30,17 @@
 		</svg>
 
 		<!-- Text Content -->
-		<h2 class="relative z-10 mb-8 text-center text-2xl font-black md:text-3xl">
+		<h2 class="font-montserrat relative z-10 mb-8 text-center text-2xl font-black md:text-3xl">
 			FEELING OUT OF SYNC WITH YOUR WORKLOAD?
 		</h2>
 	</div>
 
-	<p class="mx-auto my-8 max-w-2xl text-center text-xs italic sm:text-base">
+	<p class="font-lato mx-auto my-8 max-w-2xl text-center text-xs italic sm:text-base">
 		❝ As a wonder woman, your ambitions are limitless. But when productivity seems to fluctuate —
 		when focus fades, energy dips, and creativity feels out of reach — it can be frustrating.❞
 	</p>
 
-	<h3 class="mb-10 text-center text-xl font-bold sm:text-2xl">
+	<h3 class="font-montserrat mb-10 text-center text-xl font-bold sm:text-2xl">
 		THE HIDDEN CHALLENGE NO ONE TALKS ABOUT
 	</h3>
 
@@ -66,7 +66,7 @@
 				{:else}
 					<div
 						transition:fade
-						class="flex h-full w-full flex-col justify-center rounded-lg bg-violet-900/80 p-6"
+						class="font-lato flex h-full w-full flex-col justify-center rounded-lg bg-violet-900/80 p-6"
 					>
 						<p class="pb-4 text-xs sm:text-lg">
 							If you've ever blamed yourself for feeling burnt out, unmotivated, or unable to
@@ -87,7 +87,7 @@
 		</div>
 	</div>
 
-	<h3 class="text-accent mb-6 text-center text-xl font-black md:text-2xl">
+	<h3 class="text-accent font-montserrat mb-6 text-center text-xl font-black md:text-2xl">
 		WHAT IF YOUR WORK SCHEDULE WORKED WITH YOU — NOT AGAINST YOU?
 	</h3>
 </section>

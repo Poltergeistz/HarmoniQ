@@ -7,7 +7,7 @@
 
 <section
 	id="hero"
-	class="relative flex min-h-screen flex-col items-center justify-center bg-primary px-6 text-white"
+	class="bg-primary relative flex min-h-screen flex-col items-center justify-center px-6 text-white"
 	aria-labelledby="hero-heading"
 >
 	<!-- Container for the target and centered content -->
@@ -21,8 +21,11 @@
 		<!-- Content container that will be centered over the target -->
 		<div class="relative z-10 text-center">
 			<!-- Accessible heading -->
-			<h1 id="hero-heading" class="mb-8 text-3xl font-black sm:text-4xl font-montserrat uppercase">
-				Unlock Your Full Potential with <span class="bg-clip-text text-transparent bg-gradient-to-r from-accent via-lime-100 to-white italic">HarmoniQ</span>
+			<h1 id="hero-heading" class="font-montserrat mb-8 text-3xl font-black uppercase sm:text-4xl">
+				Unlock Your Full Potential with <span
+					class="from-accent bg-gradient-to-r via-lime-100 to-white bg-clip-text text-transparent italic"
+					>HarmoniQ</span
+				>
 			</h1>
 
 			<Form bind:email bind:source bind:isSubscribed />

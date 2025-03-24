@@ -1,6 +1,6 @@
-<section id="demo" class="bg-primary py-20 px-4 sm:px-4 md:px-4 text-center">
+<section id="demo" class="bg-primary px-4 py-20 text-center sm:px-4 md:px-4">
 	<div class="mx-auto max-w-6xl">
-		<h2 class="my-8 text-3xl font-black text-white black uppercase">Demo</h2>
+		<h2 class="black font-montserrat my-8 text-3xl font-black text-white uppercase">Demo</h2>
 
 		<!-- Video Mockup -->
 		<div
@@ -9,7 +9,9 @@
 			<div
 				class="flex aspect-video items-center justify-center overflow-hidden rounded-xl bg-black"
 			>
-				<span class="text-lg font-semibold text-white">Check back on launch for a demo!</span>
+				<span class="font-lato text-lg font-semibold text-white"
+					>Check back on launch for a demo!</span
+				>
 			</div>
 		</div>
 	</div>

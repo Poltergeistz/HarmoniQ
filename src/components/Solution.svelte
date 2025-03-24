@@ -11,37 +11,41 @@
 	<!-- Features grid -->
 	<div class="mx-auto grid max-w-4xl grid-cols-1 gap-6 md:grid-cols-2">
 		<!-- Feature 1 -->
-		<div class="rounded-lg bg-secondary p-6">
+		<div class="bg-secondary rounded-lg p-6">
 			<div class="mb-4 flex justify-center">
 				<span class="text-accent"><Sparkles /></span>
 			</div>
-			<h3 class="mb-2 text-center text-lg font-bold">PERSONALIZED RECOMMENDATIONS</h3>
-			<p class="text-center text-sm">
+			<h3 class="font-montserrat mb-2 text-center text-lg font-bold">
+				PERSONALIZED RECOMMENDATIONS
+			</h3>
+			<p class="font-lato text-center text-sm">
 				Receive task suggestions and productivity tips based on your hormonal cycle, ensuring you
 				shine on any given day.
 			</p>
 		</div>
 		<!-- Feature 2 -->
-		<div class="rounded-lg bg-secondary p-6">
+		<div class="bg-secondary rounded-lg p-6">
 			<div class="mb-4 flex justify-center">
 				<span class="text-accent"><CalendarHeart /></span>
 			</div>
-			<h3 class="mb-2 text-center text-lg font-bold">SEAMLESS CALENDAR INTEGRATION</h3>
-			<p class="text-center text-sm">
+			<h3 class="font-montserrat mb-2 text-center text-lg font-bold">
+				SEAMLESS CALENDAR INTEGRATION
+			</h3>
+			<p class="font-lato text-center text-sm">
 				Sync directly with your existing calendar, organizing your schedule, assigning you work with
 				your natural rhythm in mind.
 			</p>
 		</div>
 		<!-- Feature 3 - Full width on md screens -->
 		<div
-			class="flex flex-col items-center gap-6 rounded-lg bg-secondary p-6 md:col-span-2 md:flex-row"
+			class="bg-secondary flex flex-col items-center gap-6 rounded-lg p-6 md:col-span-2 md:flex-row"
 		>
 			<div class="flex flex-1 flex-col">
 				<div class="mb-4 flex justify-center">
 					<span class="text-accent"><BicepsFlexed /></span>
 				</div>
-				<h3 class="mb-2 text-center text-lg font-bold">USE YOUR BODY TO THRIVE</h3>
-				<p class="text-center text-sm">
+				<h3 class="font-montserrat mb-2 text-center text-lg font-bold">USE YOUR BODY TO THRIVE</h3>
+				<p class="font-lato text-center text-sm">
 					Every woman has ups and downs. It's okay! HarmoniQ understands that and aligns with your
 					cycle to maximize your goals.
 				</p>
