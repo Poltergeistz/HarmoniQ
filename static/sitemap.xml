@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://harmoniq.site</loc>
+    <lastmod>2025-03-24</lastmod> <!-- Update this to the last modified date -->
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Problem Section -->
+  <url>
+    <loc>https://harmoniq.site#problem</loc>
+    <lastmod>2025-03-24</lastmod> <!-- Update this if needed -->
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Solution Section -->
+  <url>
+    <loc>https://harmoniq.site#solution</loc>
+    <lastmod>2025-03-24</lastmod> <!-- Update this if needed -->
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Demo Section -->
+  <url>
+    <loc>https://harmoniq.site#Demo</loc>
+    <lastmod>2025-03-24</lastmod> <!-- Update this if needed -->
+    <priority>0.8</priority>
+  </url>
+
+  <!-- FAQ Section -->
+  <url>
+    <loc>https://harmoniq.site#FAQ</loc>
+    <lastmod>2025-03-24</lastmod> <!-- Update this if needed -->
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Terms Page -->
+  <url>
+    <loc>https://harmoniq.site/terms</loc>
+    <lastmod>2025-03-24</lastmod> <!-- Update this if needed -->
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Privacy Page -->
+  <url>
+    <loc>https://harmoniq.site/privacy</loc>
+    <lastmod>2025-03-24</lastmod> <!-- Update this if needed -->
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
