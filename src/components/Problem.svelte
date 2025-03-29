@@ -87,7 +87,7 @@
 		</div>
 	</div>
 
-	<h3 class="text-accent font-montserrat mb-4 text-center text-xl font-black md:text-2xl">
+	<h3 class="text-accent font-montserrat pb-4 text-center text-xl font-black md:text-2xl">
 		WHAT IF YOUR WORK SCHEDULE WORKED WITH YOU — NOT AGAINST YOU?
 	</h3>
 </section>
