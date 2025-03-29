@@ -2,7 +2,7 @@
 	let activeIndex = null; // Track the currently active accordion item
 </script>
 
-<section id="faq" class="bg-primary py-16">
+<section id="faq" class="bg-primary py-20">
 	<div class="mx-auto max-w-3xl px-4">
 		<h2 class="font-montserrat mb-12 text-center text-3xl font-black text-white uppercase">
 			Frequently Asked Questions

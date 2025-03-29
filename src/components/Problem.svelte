@@ -9,7 +9,7 @@
 </script>
 
 <!-- Section "Feeling out of sync" -->
-<section id="problem" class="bg-primary px-4 py-10 text-white">
+<section id="problem" class="bg-primary px-4 pt-18 text-white">
 	<div class="relative justify-center">
 		<svg
 			width="1118"
@@ -87,7 +87,7 @@
 		</div>
 	</div>
 
-	<h3 class="text-accent font-montserrat mb-6 text-center text-xl font-black md:text-2xl">
+	<h3 class="text-accent font-montserrat mb-4 text-center text-xl font-black md:text-2xl">
 		WHAT IF YOUR WORK SCHEDULE WORKED WITH YOU — NOT AGAINST YOU?
 	</h3>
 </section>
