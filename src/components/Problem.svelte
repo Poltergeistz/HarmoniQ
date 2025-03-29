@@ -10,14 +10,14 @@
 
 <!-- Section "Feeling out of sync" -->
 <section id="problem" class="bg-primary px-4 py-10 text-white">
-	<div class="relative">
+	<div class="relative justify-center">
 		<svg
 			width="1118"
 			height="75"
 			viewBox="0 0 1118 75"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
-			class="absolute bottom-1 z-0 hidden h-auto w-auto max-w-full object-contain md:left-0 md:block lg:left-25 xl:left-100"
+			class="absolute bottom-1 z-0 w-full max-w-full object-contain hidden lg:block"
 			alt="Workflow Wave"
 		>
 			<path
