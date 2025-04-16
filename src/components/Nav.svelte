@@ -37,8 +37,8 @@
 		>
 			<li><a href="/#problem" class="nav-link" aria-current={active === 'problem' ? 'page' : undefined}>Why Off?</a></li>
 			<li><a href="/#solution" class="nav-link" aria-current={active === 'solution' ? 'page' : undefined}>How It Helps</a></li>
-			<li><a href="/#daily-flow" class="nav-link" aria-current={active === 'daily-flow' ? 'page' : undefined}>Daily Flow</a></li>
 			<li><a href="/#reassurance" class="nav-link" aria-current={active === 'reassurance' ? 'page' : undefined}>For You?</a></li>
+			<li><a href="/#daily-flow" class="nav-link" aria-current={active === 'daily-flow' ? 'page' : undefined}>Daily Flow</a></li>
 			<li><a href="/#demo" class="nav-link" aria-current={active === 'demo' ? 'page' : undefined}>Preview</a></li>
 			<li><a href="/#faq" class="nav-link" aria-current={active === 'faq' ? 'page' : undefined}>FAQ</a></li>
 		</ul>
