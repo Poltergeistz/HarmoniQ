@@ -4,7 +4,7 @@
 
 	<div class="relative z-10 px-4 py-12 text-center flex flex-col items-center">
 		<!-- Logo -->
-		<div class="font-montserrat mb-6 bg-gradient-to-r from-purple-900 via-violet-500 to-violet-100 bg-clip-text text-2xl font-black text-transparent italic tracking-wider">
+		<div class="font-montserrat mb-6 bg-gradient-to-r from-purple-900 via-violet-400 to-violet-900 bg-clip-text text-2xl font-black text-transparent italic tracking-wider">
 			HARMONIQ
 		</div>
 

@@ -36,7 +36,7 @@
 </script>
 <form
 	on:submit={submitForm}
-	class="mx-auto w-full max-w-full pt-8"
+	class="mx-auto w-full max-w-full pt-8 px-4"
 >
 	<div class="flex flex-col md:flex-row rounded-lg border-2 overflow-hidden bg-violet-300/30 shadow-lg border-accent backdrop-blur-md">
 		<!-- Section WAITLIST -->
@@ -46,7 +46,7 @@
 		
 		<!-- Section Email -->
 		<div class="flex flex-col px-4 py-2 flex-grow">
-			<label for="email" class="text-white text-sm font-lato font-black mb-1">Email</label>
+			<label for="email" class="text-white text-sm font-lato font-black mb-2">Email</label>
 			<input
 				id="email"
 				type="email"
@@ -58,7 +58,7 @@
 			/>
 			
 			<!-- Consent -->
-			<div class="flex items-center mt-1">
+			<div class="flex items-center my-2">
 				<input
 					id="consent"
 					type="checkbox"

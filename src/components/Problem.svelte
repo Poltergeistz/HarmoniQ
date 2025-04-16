@@ -7,17 +7,16 @@
 		}
 	}
 </script>
-
 <!-- Section "Feeling out of sync" -->
-<section id="problem" class="bg-primary px-4 pt-18 text-white">
-	<div class="relative justify-center">
+<section id="problem" class="bg-primary text-white px-4 min-h-screen flex flex-col justify-center">
+<div class="relative justify-center">
 		<svg
 			width="1118"
 			height="75"
 			viewBox="0 0 1118 75"
 			fill="none"
 			xmlns="http://www.w3.org/2000/svg"
-			class="absolute bottom-1 z-0 w-full max-w-full object-contain hidden lg:block"
+			class="absolute bottom-1 z-0 hidden w-full max-w-full object-contain lg:block"
 			alt="Workflow Wave"
 		>
 			<path
@@ -30,64 +29,45 @@
 		</svg>
 
 		<!-- Text Content -->
-		<h2 class="font-montserrat relative z-10 mb-8 text-center text-2xl font-black md:text-3xl">
-			FEELING OUT OF SYNC WITH YOUR WORKLOAD?
+		<h2 class="font-montserrat text-center text-xl sm:text-3xl font-black mb-4 relative z-10 md:text-3xl uppercase">
+			You’re Not Unmotivated. You’re Misaligned.
 		</h2>
 	</div>
 
-	<p class="font-lato mx-auto my-8 max-w-2xl text-center text-xs italic sm:text-base">
-		❝ As a wonder woman, your ambitions are limitless. But when productivity seems to fluctuate —
-		when focus fades, energy dips, and creativity feels out of reach — it can be frustrating.❞
+	<p class="font-lato text-center text-sm italic text-white/80 max-w-md mx-auto my-8">
+		❝ Your energy isn’t random — it’s rhythmic. Yet, most systems ignore that. ❞
 	</p>
 
-	<h3 class="font-montserrat mb-10 text-center text-xl font-bold sm:text-2xl">
-		THE HIDDEN CHALLENGE NO ONE TALKS ABOUT
-	</h3>
-
-	<!-- Section "Click to reveal" -->
-	<div class="reveal-container mx-auto mb-16 max-w-2xl">
+	<!-- Reveal Block -->
+	<div class="mx-auto mb-8 max-w-md w-full">
 		<div
-			class="relative h-80 w-full cursor-pointer overflow-hidden rounded-lg border-2 border-purple-300"
-			class:cursor-default={revealed}
+			class="relative h-60 cursor-pointer overflow-hidden rounded-xl border border-purple-300"
 			on:click={reveal}
+			class:cursor-default={revealed}
 		>
-			<!-- Blurred background (without image) -->
-			<div
-				class="absolute inset-0 bg-gradient-to-br from-violet-200/70 to-violet-600/70"
-				class:backdrop-blur-lg={!revealed}
-			></div>
+			<div class="absolute inset-0 bg-gradient-to-br from-violet-200/70 to-violet-600/70" class:backdrop-blur-lg={!revealed}></div>
 
-			<!-- Content overlay -->
-			<div class="relative z-10 flex h-full w-full items-center justify-center p-6">
+			<div class="relative z-10 flex h-full w-full items-center justify-center p-4">
 				{#if !revealed}
-					<p class="text-accent rounded-lg bg-violet-800/30 px-6 py-3 text-xl font-black">
+					<p class="text-accent rounded-lg bg-violet-800/30 px-4 py-2 text-sm font-bold">
 						CLICK TO REVEAL
 					</p>
 				{:else}
-					<div
-						transition:fade
-						class="font-lato flex h-full w-full flex-col justify-center rounded-lg bg-violet-900/80 p-6"
-					>
-						<p class="pb-4 text-xs sm:text-lg">
-							If you've ever blamed yourself for feeling burnt out, unmotivated, or unable to
-							concentrate, here's the truth:
-						</p>
-						<ol class="space-y-2 text-xs sm:text-base">
-							<li><b>🔸 It's not you—it's biology</b></li>
-							<li><b>🔸 Hormonal shifts impact mental clarity, stamina, and decision-making</b></li>
-							<li><b>🔸 Yet, most productivity systems assume every day is the same</b></li>
-						</ol>
-						<p class="pt-4 text-xs sm:text-base">
-							The result? You're constantly pushing against your natural rhythm, making work feel
-							harder than it should.
-						</p>
+					<div transition:fade class="font-lato flex flex-col justify-center rounded-lg bg-violet-900/80 p-4 text-xs sm:text-sm">
+						<p class="pb-2">Some days you glow. Others, you can’t focus no matter how hard you try.</p>
+						<ul class="list-disc list-inside space-y-1">
+							<li><b>That’s not laziness. It’s biology.</b></li>
+							<li><b>Hormones shape focus, mood, and clarity.</b></li>
+							<li><b>Linear systems don’t get that. HarmoniQ does.</b></li>
+						</ul>
+						<p class="pt-2">You were built to flow — not force.</p>
 					</div>
 				{/if}
 			</div>
 		</div>
 	</div>
 
-	<h3 class="text-accent font-montserrat pb-4 text-center text-xl font-black md:text-2xl">
-		WHAT IF YOUR WORK SCHEDULE WORKED WITH YOU — NOT AGAINST YOU?
+	<h3 class="text-accent font-montserrat text-center text-base sm:text-lg font-black uppercase">
+		Meet your cycle-aware productivity coach.
 	</h3>
 </section>

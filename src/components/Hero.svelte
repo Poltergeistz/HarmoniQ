@@ -4,13 +4,23 @@
 	let source = '';
 	let isSubscribed = false;
 </script>
+
 <section
 	id="hero"
-	class="bg-primary relative flex min-h-screen flex-col items-center md:items-start justify-center text-white md:pl-40 px-4 md:px-0"
+	class="bg-primary relative flex min-h-screen flex-col items-center justify-center px-4 py-20 text-white md:items-start md:px-0 md:pl-40"
 	aria-labelledby="hero-heading"
 >
-	<div class="absolute grid w-full max-w-2xl z-10 text-center md:text-left pr-0 md:pr-8">
-		<h1 id="hero-heading" class="font-montserrat mb-8 text-3xl font-black uppercase sm:text-6xl leading-tight">
+	<!-- Image overlay for mobile ONLY -->
+	<img
+		src="/unlock_true_potential.svg"
+		alt="woman embracing her true potential, rays of energy casting around her"
+		class="pointer-events-none absolute inset-0 z-0 block h-screen w-full object-cover opacity-10 md:hidden"
+	/>
+	<div class="absolute z-10 grid w-full max-w-2xl pr-0 text-center md:pr-8 md:text-left">
+		<h1
+			id="hero-heading"
+			class="font-montserrat mb-8 text-3xl leading-tight font-black uppercase sm:text-6xl"
+		>
 			Unlock Your Full Potential with <span
 				class="from-accent bg-gradient-to-r via-lime-100 to-white bg-clip-text text-transparent italic"
 				>HarmoniQ</span
@@ -19,7 +29,7 @@
 		<Form bind:email bind:source bind:isSubscribed />
 	</div>
 	<!-- Container for the grid layout with two columns -->
-	<div class="relative grid w-full max-w-6xl grid-cols-1 md:grid-cols-2 items-center">
+	<div class="relative grid w-full max-w-6xl grid-cols-1 items-center md:grid-cols-2">
 		<!-- Content (title and form) in the first column -->
 		<div class="relative z-10 text-center md:text-left">
 			<!-- The content here, like text or other elements -->

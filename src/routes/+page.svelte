@@ -5,6 +5,8 @@
 	import Solution from '../components/Solution.svelte';
 	import Demo from '../components/Demo.svelte';
 	import FAQ from '../components/FAQ.svelte';
+	import Reassurance from '../components/Reassurance.svelte';
+	import Daily from '../components/Daily.svelte';
 	import Footer from '../components/Footer.svelte';
 	import ScrollToTop from '$lib/ScrollToTop.svelte';
 </script>
@@ -14,6 +16,8 @@
 	<Hero />
 	<Problem />
 	<Solution />
+	<Reassurance />
+	<Daily />
 	<Demo />
 	<FAQ />
 	<Footer />

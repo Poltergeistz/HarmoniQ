@@ -1,58 +1,97 @@
 <script>
-	import { BicepsFlexed, Sparkles, CalendarHeart } from '@lucide/svelte';
+	import { onMount } from 'svelte';
+
+	let isVisible = false;
+
+	onMount(() => {
+		isVisible = true;
+	});
 </script>
 
-<!-- Section "Empowering your time" -->
-<section id="solution" class="bg-primary px-2 py-10 text-white">
-	<h2 class="font-montserrat my-8 text-center text-2xl font-black md:text-3xl">
+<section
+	id="solution"
+	class="bg-primary flex min-h-screen flex-col justify-center px-4 py-20 text-white"
+>
+	<h2
+		class="font-montserrat fade-up mb-4 text-center text-2xl font-black md:text-3xl"
+		class:fade-up={isVisible}
+	>
 		EMPOWERING <span class="text-accent">YOUR TIME</span>, HONORING
 		<span class="text-accent">YOUR RHYTHM</span>
 	</h2>
-	<!-- Features grid -->
+
+	<p
+		class="font-lato fade-up fade-delay-1 mx-auto mb-6 max-w-xl text-center text-sm italic"
+		class:fade-up={isVisible}
+	>
+		No overwhelm. No shame. Just support — tuned to your inner compass.
+	</p>
+
 	<div class="mx-auto grid max-w-4xl grid-cols-1 gap-6 md:grid-cols-2">
 		<!-- Feature 1 -->
-		<div class="bg-secondary rounded-lg p-6">
-			<div class="mb-4 flex justify-center">
-				<span class="text-accent"><Sparkles /></span>
-			</div>
-			<h3 class="font-montserrat mb-2 text-center text-lg font-bold">
-				PERSONALIZED RECOMMENDATIONS
-			</h3>
-			<p class="font-lato text-center text-sm">
-				Receive task suggestions and productivity tips based on your hormonal cycle, ensuring you
-				shine on any given day.
-			</p>
-		</div>
-		<!-- Feature 2 -->
-		<div class="bg-secondary rounded-lg p-6">
-			<div class="mb-4 flex justify-center">
-				<span class="text-accent"><CalendarHeart /></span>
-			</div>
-			<h3 class="font-montserrat mb-2 text-center text-lg font-bold">
-				SEAMLESS CALENDAR INTEGRATION
-			</h3>
-			<p class="font-lato text-center text-sm">
-				Sync directly with your existing calendar, organizing your schedule, assigning you work with
-				your natural rhythm in mind.
-			</p>
-		</div>
-		<!-- Feature 3 - Full width on md screens -->
 		<div
-			class="bg-secondary flex flex-col items-center gap-6 rounded-lg p-6 md:col-span-2 md:flex-row"
+			class="bg-secondary fade-up fade-delay-1 flex h-full max-h-[420px] flex-col justify-between overflow-hidden rounded-xl p-6"
+			class:fade-up={isVisible}
 		>
-			<div class="flex flex-1 flex-col">
-				<div class="mb-4 flex justify-center">
-					<span class="text-accent"><BicepsFlexed /></span>
-				</div>
-				<h3 class="font-montserrat mb-2 text-center text-lg font-bold">USE YOUR BODY TO THRIVE</h3>
+			<h3 class="font-montserrat mb-2 text-center text-lg font-black">Daily coaching tips.</h3>
+			<p class="font-lato mb-4 text-center text-sm">
+				Receive short, loving nudges aligned with your current energy phase: focus cues, mindset
+				boosts, and cycle-specific tips — like a wise friend who knows your rhythm.
+			</p>
+			<div class="flex justify-center">
+				<img
+					src="praise.svg"
+					alt="Flow with grace, your energy is sacred."
+					class="max-h-40 w-auto"
+				/>
+			</div>
+		</div>
+
+		<!-- Feature 2 with image as soft background -->
+		<div
+			class="bg-secondary fade-up fade-delay-2 relative flex h-full max-h-[420px] flex-col justify-between overflow-hidden rounded-xl p-6"
+			class:fade-up={isVisible}
+		>
+			<!-- Background image (soft and behind) -->
+			<img
+				src="surf_calendar.svg"
+				alt="Calendar synced"
+				class="pointer-events-none absolute inset-0 h-full w-full object-contain opacity-10"
+			/>
+
+			<!-- Content overlay -->
+			<div class="relative z-10">
+				<h3 class="font-montserrat mb-2 text-center text-lg font-black">
+					Synced to your real flow.
+				</h3>
 				<p class="font-lato text-center text-sm">
-					Every woman has ups and downs. It's okay! HarmoniQ understands that and aligns with your
-					cycle to maximize your goals.
+					Integrate with your calendar and let HarmoniQ gently guide your schedule — suggesting the
+					best types of tasks for each cycle phase, so you’re never forcing energy that isn’t there.
 				</p>
 			</div>
-			<div class="flex flex-1 justify-center rounded-xl bg-violet-100">
-				<img src="smartphone-exemple.svg" alt="smartphone" class="max-h-64" />
+		</div>
+
+		<!-- Feature 3 -->
+		<div
+			class="bg-secondary fade-up fade-delay-3 flex h-full max-h-[420px] flex-col items-center justify-between gap-4 overflow-hidden rounded-xl p-6 md:col-span-2 md:flex-row"
+			class:fade-up={isVisible}
+		>
+			<div class="flex flex-1 flex-col justify-center">
+				<h3 class="font-montserrat mb-2 text-center text-lg font-black">
+					Your rhythm isn’t a <span class="italic">weakness</span>,<br />
+					<span class="text-primary font-black uppercase">it’s your edge.</span>
+				</h3>
+				<p class="font-lato text-center text-sm">
+					You’re not made to operate the same way every day. HarmoniQ helps you turn your natural
+					rhythm into a business advantage — so you can lead with flow, not friction.
+				</p>
 			</div>
+
+			<img
+				src="thrive_with_your_body.svg"
+				alt="women thriving"
+				class="h-full w-auto object-contain"
+			/>
 		</div>
 	</div>
 </section>
