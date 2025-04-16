@@ -1,32 +1,27 @@
-<footer class="bg-accent md:bg-accent relative mt-auto overflow-hidden pt-24">
-	<!-- Wave background image -->
+<footer class="bg-accent relative mt-auto overflow-hidden pt-24">
+	<!-- Wave background -->
 	<img src="footer-wave.svg" alt="" class="absolute -top-1 left-0 z-0 w-full" aria-hidden="true" />
 
-	<div class="relative z-10 px-4 py-12">
-		<div class="text-center">
-			<div
-				class="font-montserrat mb-4 bg-gradient-to-r from-purple-900 via-violet-500 to-violet-100 bg-clip-text text-xl font-black text-transparent italic"
-			>
-				HARMONIQ
-			</div>
-			<div class="text-primary mb-6 flex justify-center space-x-4 py-6">
-				<a href="/#problem" class="font-lato font-bold hover:text-purple-500">Problem</a>
-				<a href="/#solution" class="font-lato font-bold hover:text-purple-500">Solution</a>
-				<a href="/#demo" class="font-lato font-bold hover:text-purple-500">Demo</a>
-				<a href="/#faq" class="font-lato font-bold hover:text-purple-500">FAQ</a>
-			</div>
-			<div class="text-primary flex justify-center space-x-4 py-2 text-xs">
-				<a
-					href="/privacy"
-					aria-label="Privacy Policy"
-					class="font-montserrat font-bold hover:text-purple-500">PRIVACY POLICY</a
-				>
-				<a
-					href="/terms"
-					aria-label="Terms of Service"
-					class="font-montserrat font-bold hover:text-purple-500">TERMS OF SERVICE</a
-				>
-			</div>
+	<div class="relative z-10 px-4 py-12 text-center flex flex-col items-center">
+		<!-- Logo -->
+		<div class="font-montserrat mb-6 bg-gradient-to-r from-purple-900 via-violet-500 to-violet-100 bg-clip-text text-2xl font-black text-transparent italic tracking-wider">
+			HARMONIQ
 		</div>
+
+		<!-- Navigation links, one column -->
+		<nav class="space-y-3 text-primary text-xs sm:text- font-lato font-bold mb-8">
+			<a href="/#daily-flow" class="block hover:text-purple-500 transition">Your Daily Ritual</a>
+			<a href="/#faq" class="block hover:text-purple-500 transition">Questions You Might Have</a>
+		</nav>
+
+		<!-- Legal links -->
+		<div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-xs text-primary font-montserrat font-bold">
+			<a href="/privacy" class="hover:text-purple-500 transition">Privacy Policy</a>
+			<a href="/terms" class="hover:text-purple-500 transition">Terms of Service</a>
+		</div>
+		<!-- Poetic whisper -->
+		<p class="font-lato text-[0.6rem] text-primary/80 mt-8 italic">
+			Flow first. Everything else follows.
+		</p>
 	</div>
 </footer>
