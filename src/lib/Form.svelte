@@ -3,25 +3,23 @@
 	export let source: string = '';
 	export let isSubscribed: boolean = false;
 	let isLoading: boolean = false;
-
+	let isConsentGiven: boolean = false;
+	
 	interface SubscribeResponse {
 		success: boolean;
 		message: string;
 	}
-
+	
 	async function submitForm(event: Event) {
 		event.preventDefault();
 		isLoading = true;
-
 		try {
 			const response = await fetch('/api/subscribe', {
 				method: 'POST',
 				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({ email, source })
+				body: JSON.stringify({ email, source, consent: isConsentGiven })
 			});
-
 			const data: SubscribeResponse = await response.json();
-
 			if (data.success) {
 				isSubscribed = true;
 				email = ''; // Reset the field
@@ -36,69 +34,71 @@
 		}
 	}
 </script>
-
-<!-- Responsive Form -->
 <form
 	on:submit={submitForm}
-	class="mx-auto w-full max-w-lg rounded-lg bg-violet-300/30 p-6 text-white shadow-lg backdrop-blur-md"
+	class="mx-auto w-full max-w-full pt-8"
 >
-	<!-- FLEX: Desktop (Row) | Mobile (Stacked) -->
-	<div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-		<!-- Label (Visible on all screen sizes) -->
-		<label for="email" class="font-lato text-sm font-medium text-white sm:w-auto">Email:</label>
-
-		<!-- Input Field -->
-		<input
-			id="email"
-			type="email"
-			bind:value={email}
-			placeholder="Enter your email"
-			required
-			class="focus:border-accent focus:ring-accent font-lato w-full rounded-lg border border-violet-200 bg-violet-200/20 p-3 text-white placeholder-white/70 focus:ring-2 focus:outline-none sm:flex-1"
-			aria-required="true"
-		/>
-
-		<!-- Submit Button -->
+	<div class="flex flex-col md:flex-row rounded-lg border-2 overflow-hidden bg-violet-300/30 shadow-lg border-accent backdrop-blur-md">
+		<!-- Section WAITLIST -->
+		<div class="text-white px-6 py-4 flex items-center justify-center md:justify-start font-black font-montserrat uppercase text-lg md:border-r-2 border-b-2 md:border-b-0 border-accent">
+			WAITLIST
+		</div>
+		
+		<!-- Section Email -->
+		<div class="flex flex-col px-4 py-2 flex-grow">
+			<label for="email" class="text-white text-sm font-lato font-black mb-1">Email</label>
+			<input
+				id="email"
+				type="email"
+				bind:value={email}
+				placeholder="isha@wonder.ly"
+				required
+				class="w-full px-3 py-2 bg-violet-300 bg-opacity-50 text-white placeholder-white placeholder-opacity-80 focus:outline-none"
+				aria-required="true"
+			/>
+			
+			<!-- Consent -->
+			<div class="flex items-center mt-1">
+				<input
+					id="consent"
+					type="checkbox"
+					bind:checked={isConsentGiven}
+					required
+					class="h-4 w-4 rounded mr-2 cursor-pointer"
+				/>
+				<label for="consent" class="text-white text-sm">
+					I consent to recieve emails about HarmoniQ
+				</label>
+			</div>
+		</div>
+		
+		<!-- Button JOIN -->
 		<button
 			type="submit"
-			class="bg-accent text-primary hover:bg-accent-dark focus:ring-accent font-montserrat flex items-center justify-center rounded-lg px-4 py-3 font-bold uppercase transition focus:ring-2 focus:outline-none sm:ml-2"
+			class="bg-accent font-black font-montserrat text-primary px-8 py-4 text-lg cursor-pointer w-full md:w-auto"
 			aria-label="Join the waiting list"
 			disabled={isLoading}
 		>
 			{#if isLoading}
 				<svg
-					class="mr-2 h-5 w-5 animate-spin"
+					class="inline-block mr-1 h-4 w-4 animate-spin"
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
 					viewBox="0 0 24 24"
 				>
-					<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"
-					></circle>
+					<circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
 					<path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 0116 0"></path>
 				</svg>
-				Submitting...
+				...
 			{:else}
-				Join Waitlist
+				JOIN
 			{/if}
 		</button>
 	</div>
-
-	<!-- Consent Checkbox (Centered & Properly Aligned) -->
-	<div class="mt-4 flex items-start justify-center gap-3">
-		<input
-			id="consent"
-			type="checkbox"
-			required
-			class="border-accent text-accent focus:ring-accent h-4 w-4 rounded"
-		/>
-		<label for="consent" class="font-lato text-sm text-white">
-			I consent to receive emails about HarmoniQ updates and announcements.
-		</label>
-	</div>
-
-	<!-- Success Message -->
+	
+	<!-- Success -->
 	{#if isSubscribed}
-		<p class="text-accent font-lato mt-3 text-center text-sm" role="alert" aria-live="polite">
+		<p class="text-lime-200 mt-3 text-center text-sm" role="alert" aria-live="polite">
 			Thank you for subscribing!
 		</p>
 	{/if}
